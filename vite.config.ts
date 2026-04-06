@@ -2,11 +2,22 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+// The Vercel–Supabase integration injects SUPABASE_URL / SUPABASE_ANON_KEY
+// (no VITE_ prefix). Map them so the client bundle can read them via
+// import.meta.env.VITE_SUPABASE_*. VITE_* vars in .env take precedence
+// for local development.
+const supabaseUrl = process.env.VITE_SUPABASE_URL ?? process.env.SUPABASE_URL ?? ''
+const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY ?? process.env.SUPABASE_ANON_KEY ?? ''
+
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
   ],
+  define: {
+    'import.meta.env.VITE_SUPABASE_URL': JSON.stringify(supabaseUrl),
+    'import.meta.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(supabaseAnonKey),
+  },
   build: {
     // Code-split vendor bundles so the initial load is smaller
     rollupOptions: {
