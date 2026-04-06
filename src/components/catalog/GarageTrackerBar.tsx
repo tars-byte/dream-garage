@@ -16,36 +16,52 @@ export default function GarageTrackerBar() {
   return (
     <button
       onClick={() => navigate('/garage')}
-      className="fixed bottom-0 left-0 right-0 z-30 bg-surface border-t border-border px-4 py-3 flex flex-col gap-2 active:bg-surface-elevated transition-colors"
       aria-label={t('garage.title')}
+      className="fixed bottom-0 left-0 right-0 z-30 px-4 py-3 flex flex-col gap-2.5 active:scale-[0.99] transition-transform"
+      style={{
+        background: 'rgba(14,14,14,0.85)',
+        backdropFilter: 'blur(20px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(20px) saturate(150%)',
+        borderTop: '1px solid rgba(255,255,255,0.07)',
+      }}
     >
       {/* Bay indicators + remaining text */}
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
           {[0, 1, 2].map((i) => (
             <div
               key={i}
               className={[
-                'w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold transition-all duration-300',
+                'w-8 h-8 rounded-full border-2 flex items-center justify-center text-xs font-bold transition-all duration-300',
                 cars[i]
-                  ? 'bg-accent border-accent text-white scale-110'
+                  ? 'text-white scale-105'
                   : 'border-border text-muted',
               ].join(' ')}
+              style={cars[i] ? {
+                background: 'linear-gradient(135deg, #e31e26, #c01b21)',
+                borderColor: 'transparent',
+                boxShadow: '0 0 10px rgba(227,30,38,0.4)',
+              } : undefined}
             >
               {cars[i] ? '✓' : i + 1}
             </div>
           ))}
-          <span className="text-text-secondary text-xs ml-1">
+          <span className="text-text-secondary text-xs font-medium ml-0.5">
             {count}/3
           </span>
         </div>
 
-        <span className={[
-          'text-sm font-semibold tabular-nums',
-          pct > 90 ? 'text-budget-red' : pct > 70 ? 'text-budget-yellow' : 'text-budget-green',
-        ].join(' ')}>
-          {formatPrice(remaining)} {t('budget.remaining').replace('${{amount}} ', '')}
-        </span>
+        <div className="flex flex-col items-end gap-0.5">
+          <span className={[
+            'text-base font-black tabular-nums leading-none',
+            pct > 90 ? 'text-budget-red' : pct > 70 ? 'text-budget-yellow' : 'text-budget-green',
+          ].join(' ')}>
+            {formatPrice(remaining)}
+          </span>
+          <span className="text-[10px] text-muted uppercase tracking-wider font-medium">
+            restantes
+          </span>
+        </div>
       </div>
 
       {/* Budget bar */}

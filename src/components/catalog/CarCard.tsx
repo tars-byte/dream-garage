@@ -33,9 +33,13 @@ export default function CarCard({ car, onViewDetail }: CarCardProps) {
       onClick={() => onViewDetail(car)}
       className={[
         'relative bg-surface rounded-2xl overflow-hidden border transition-all duration-200 cursor-pointer group',
-        inGarage ? 'border-accent/60' : 'border-border hover:border-border/80',
-        disabled ? 'opacity-50' : '',
+        inGarage
+          ? 'border-accent/50'
+          : disabled
+          ? 'border-border opacity-50'
+          : 'border-border card-hover',
       ].join(' ')}
+      style={inGarage ? { boxShadow: '0 0 0 1px rgba(227,30,38,0.3), 0 4px 20px rgba(227,30,38,0.1)' } : undefined}
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-surface-elevated">
@@ -43,7 +47,13 @@ export default function CarCard({ car, onViewDetail }: CarCardProps) {
           src={car.image_url}
           alt={`${car.brand} ${car.model}`}
           loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+
+        {/* Bottom gradient for text legibility */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 55%)' }}
         />
 
         {/* Top-left badges */}
@@ -66,43 +76,57 @@ export default function CarCard({ car, onViewDetail }: CarCardProps) {
           </div>
         )}
 
+        {/* Price over bottom gradient */}
+        <div className="absolute bottom-2 left-3">
+          <span className="text-sm font-bold text-white drop-shadow-sm">
+            {formatPrice(car.price_usd)}
+          </span>
+        </div>
+
         {/* In-garage overlay */}
         {inGarage && (
-          <div className="absolute inset-0 bg-accent/10 flex items-center justify-center">
-            <div className="bg-accent rounded-full w-8 h-8 flex items-center justify-center shadow-lg">
-              <span className="text-white text-sm font-bold">✓</span>
+          <div className="absolute inset-0 bg-accent/10 flex items-end justify-end p-2">
+            <div
+              className="w-6 h-6 rounded-full flex items-center justify-center"
+              style={{ background: 'rgba(227,30,38,0.9)', boxShadow: '0 0 8px rgba(227,30,38,0.5)' }}
+            >
+              <span className="text-white text-xs font-bold">✓</span>
             </div>
           </div>
         )}
       </div>
 
       {/* Info */}
-      <div className="p-3 flex flex-col gap-2">
+      <div className="p-3 flex flex-col gap-2.5">
         <div>
-          <p className="text-xs text-text-secondary font-medium">{car.brand}</p>
-          <p className="text-sm font-semibold text-text leading-tight">{car.model}</p>
-          <p className="text-xs text-muted">{car.trim}</p>
+          <p className="text-[10px] text-muted font-semibold uppercase tracking-wider">{car.brand}</p>
+          <p className="text-sm font-bold text-text leading-tight">{car.model}</p>
+          <p className="text-[11px] text-muted mt-0.5">{car.trim}</p>
         </div>
 
-        <div className="flex items-center justify-between gap-2">
-          <span className="text-base font-bold text-text">{formatPrice(car.price_usd)}</span>
-
-          <button
-            onClick={handleToggle}
-            disabled={disabled}
-            className={[
-              'shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150',
-              inGarage
-                ? 'bg-accent/15 text-accent border border-accent/40 hover:bg-accent/25'
-                : disabled
-                ? 'bg-surface-elevated text-muted border border-border cursor-not-allowed'
-                : 'bg-accent text-white hover:bg-accent-hover active:scale-95',
-            ].join(' ')}
-            title={disabled ? t('catalog.over_budget') : ''}
-          >
-            {inGarage ? t('catalog.in_garage') : t('catalog.add_to_garage')}
-          </button>
-        </div>
+        <button
+          onClick={handleToggle}
+          disabled={disabled}
+          className={[
+            'w-full py-2 rounded-xl text-xs font-bold transition-all duration-150',
+            inGarage
+              ? 'text-accent border border-accent/40'
+              : disabled
+              ? 'bg-surface-elevated text-muted border border-border cursor-not-allowed'
+              : 'text-white active:scale-95',
+          ].join(' ')}
+          style={inGarage
+            ? { background: 'rgba(227,30,38,0.1)' }
+            : !disabled
+            ? {
+                background: 'linear-gradient(135deg, #e31e26, #c01b21)',
+                boxShadow: '0 2px 8px rgba(227,30,38,0.3)',
+              }
+            : undefined}
+          title={disabled ? t('catalog.over_budget') : ''}
+        >
+          {inGarage ? t('catalog.in_garage') : t('catalog.add_to_garage')}
+        </button>
       </div>
     </div>
   )

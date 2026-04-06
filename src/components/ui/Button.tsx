@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import type { ButtonHTMLAttributes, CSSProperties, ReactNode } from 'react'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost' | 'danger'
@@ -9,13 +9,23 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
   primary:
-    'bg-accent text-white hover:bg-accent-hover active:scale-[0.98] font-semibold',
+    'text-white active:scale-[0.98] font-semibold',
   secondary:
     'bg-surface-elevated text-text hover:bg-surface-hover border border-border font-medium',
   ghost:
     'bg-transparent text-text-secondary hover:text-text hover:bg-surface-elevated border border-border font-medium',
   danger:
     'bg-transparent text-budget-red hover:bg-budget-red/10 border border-budget-red/40 font-medium',
+}
+
+const variantStyle: Record<NonNullable<ButtonProps['variant']>, CSSProperties | undefined> = {
+  primary: {
+    background: 'linear-gradient(135deg, #e31e26, #c01b21)',
+    boxShadow: '0 2px 12px rgba(227,30,38,0.3)',
+  },
+  secondary: undefined,
+  ghost: undefined,
+  danger: undefined,
 }
 
 const sizeClasses: Record<NonNullable<ButtonProps['size']>, string> = {
@@ -37,6 +47,7 @@ export default function Button({
     <button
       {...props}
       disabled={disabled}
+      style={!disabled ? variantStyle[variant] : undefined}
       className={[
         'inline-flex items-center justify-center gap-2 transition-all duration-150 cursor-pointer select-none',
         variantClasses[variant],

@@ -140,7 +140,7 @@ export default function CarDetailSheet({ car, onClose }: CarDetailSheetProps) {
         {/* Specs grid */}
         <div>
           <p className="text-xs text-text-secondary uppercase tracking-wider mb-3 font-medium">
-            Especificaciones
+            {t('car_detail.specs_title')}
           </p>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4 bg-surface-elevated rounded-2xl p-4">
             <SpecRow label={t('car_detail.specs_engine')} value={specs.engine} />

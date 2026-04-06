@@ -216,7 +216,7 @@ export default function GaragePreviewPage() {
             maxLength={40}
           />
           <EditableField
-            label={`${t('garage.tagline_placeholder').split('(')[0].trim()} (opcional)`}
+            label={t('garage.tagline_label')}
             value={tagline}
             placeholder={t('garage.tagline_placeholder')}
             onChange={setTagline}

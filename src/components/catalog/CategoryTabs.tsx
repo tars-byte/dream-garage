@@ -25,11 +25,15 @@ export default function CategoryTabs({ active, onChange }: CategoryTabsProps) {
             key={cat}
             onClick={() => onChange(cat)}
             className={[
-              'shrink-0 px-3.5 py-1.5 rounded-full text-sm font-medium transition-all duration-150',
+              'shrink-0 px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-150 active:scale-95',
               isActive
-                ? 'bg-accent text-white'
-                : 'bg-surface-elevated text-text-secondary border border-border hover:border-accent/50 hover:text-text',
+                ? 'text-white'
+                : 'bg-surface-elevated text-text-secondary border border-border hover:border-white/20 hover:text-text',
             ].join(' ')}
+            style={isActive ? {
+              background: 'linear-gradient(135deg, #e31e26, #c01b21)',
+              boxShadow: '0 2px 10px rgba(227,30,38,0.35)',
+            } : undefined}
           >
             {t(`categories.${cat}`)}
           </button>

@@ -66,7 +66,10 @@ export default function CatalogPage() {
     <div className="flex flex-col min-h-screen bg-[#0d0d0d]">
 
       {/* Header */}
-      <header className="sticky top-0 z-20 bg-[#0d0d0d]/95 backdrop-blur border-b border-border">
+      <header
+        className="sticky top-0 z-20 border-b border-border"
+        style={{ background: 'rgba(10,10,10,0.92)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)' }}
+      >
         <div className="flex items-center gap-3 px-4 py-3">
           <button
             onClick={() => navigate(-1)}
@@ -74,11 +77,12 @@ export default function CatalogPage() {
           >
             ←
           </button>
-          <h1 className="text-base font-semibold text-text flex-1">{t('catalog.title')}</h1>
+          <h1 className="text-base font-bold text-text flex-1 tracking-tight">{t('catalog.title')}</h1>
           {carCount > 0 && (
             <button
               onClick={() => navigate('/garage')}
-              className="flex items-center gap-1.5 bg-accent/15 border border-accent/40 text-accent text-xs font-semibold px-3 py-1.5 rounded-xl"
+              className="flex items-center gap-1.5 text-accent text-xs font-bold px-3 py-1.5 rounded-xl transition-all"
+              style={{ background: 'rgba(227,30,38,0.12)', border: '1px solid rgba(227,30,38,0.35)' }}
             >
               🚗 {carCount}/3
             </button>
@@ -94,7 +98,7 @@ export default function CatalogPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={t('catalog.search_placeholder')}
-              className="w-full bg-surface-elevated border border-border rounded-xl pl-9 pr-4 py-2.5 text-sm text-text placeholder:text-muted focus:outline-none focus:border-accent/60"
+              className="w-full bg-surface-elevated border border-border rounded-xl pl-9 pr-4 py-2.5 text-sm text-text placeholder:text-muted focus:outline-none focus:border-accent/50 transition-colors"
             />
           </div>
         </div>
