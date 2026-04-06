@@ -1,0 +1,197 @@
+{
+  "lang": "en",
+
+  "nav": {
+    "leaderboard": "Leaderboard",
+    "lang_toggle": "ES"
+  },
+
+  "landing": {
+    "headline": "Dream Garage",
+    "subheadline": "The $50K Challenge",
+    "pitch_1": "Pick 3 cars from Expomovil.",
+    "pitch_2": "Stay under $50,000.",
+    "pitch_3": "Share your lineup.",
+    "pitch_4": "Dare your friends to beat it.",
+    "cta_build": "Build My Garage →",
+    "social_proof": "{{count}} garages built today",
+    "social_proof_one": "1 garage built today",
+    "leaderboard_link": "See Leaderboard",
+    "featured_title": "Featured Garages",
+    "view_and_vote": "View & Vote"
+  },
+
+  "catalog": {
+    "title": "Pick Your Cars",
+    "search_placeholder": "Search brand or model...",
+    "sort_label": "Sort",
+    "sort_popular": "Most Popular",
+    "sort_price_asc": "Price: Low to High",
+    "sort_price_desc": "Price: High to Low",
+    "filter_label": "Filter",
+    "filter_title": "Filters",
+    "filter_price_range": "Price Range",
+    "filter_fuel": "Fuel Type",
+    "filter_drivetrain": "Drivetrain",
+    "filter_seats": "Seats",
+    "filter_brand": "Brand",
+    "filter_clear": "Clear All",
+    "filter_apply": "Apply",
+    "what_is_popular": "What are people picking?",
+    "no_results": "No cars match your filters.",
+    "add_to_garage": "+ Add",
+    "in_garage": "In Garage",
+    "over_budget": "Over budget",
+    "expo_deal": "Expo Deal",
+    "featured_badge": "Featured"
+  },
+
+  "categories": {
+    "all": "All",
+    "suv": "SUV",
+    "pickup": "Pickup",
+    "sedan": "Sedan",
+    "hatchback": "Hatchback",
+    "crossover": "Crossover",
+    "minivan": "Minivan",
+    "electric": "Electric",
+    "hybrid": "Hybrid",
+    "commercial": "Commercial",
+    "sport": "Sport",
+    "luxury": "Luxury"
+  },
+
+  "car_detail": {
+    "specs_engine": "Engine",
+    "specs_hp": "Power",
+    "specs_drivetrain": "Drivetrain",
+    "specs_seats": "Seats",
+    "specs_fuel_consumption": "Fuel Use",
+    "specs_ground_clearance": "Clearance",
+    "specs_range": "Range",
+    "specs_zero_100": "0–100 km/h",
+    "specs_towing": "Towing Capacity",
+    "specs_safety": "Safety",
+    "specs_warranty": "Warranty",
+    "specs_hp_unit": "hp",
+    "specs_fuel_unit": "L/100km",
+    "specs_range_unit": "km",
+    "specs_towing_unit": "kg",
+    "specs_zero_unit": "s",
+    "specs_warranty_unit": "yr",
+    "specs_clearance_unit": "mm",
+    "why_ticos_love_it": "Why buyers love it",
+    "dealer_booth": "Booth {{booth}}",
+    "contact_dealer": "Contact Dealer",
+    "monthly_estimate": "~${{amount}}/mo (60 months, 9% APR)",
+    "budget_after": "Remaining budget: ${{amount}}",
+    "remove_from_garage": "Remove from Garage",
+    "add_to_garage": "Add to My Garage"
+  },
+
+  "garage": {
+    "title": "My Dream Garage",
+    "default_label": "My Dream Garage",
+    "label_placeholder": "Name your garage (e.g. Weekend Warrior)",
+    "tagline_placeholder": "Optional tagline (e.g. Efficiency over everything)",
+    "bay_empty": "+ Add",
+    "bay_label": "Bay {{n}}",
+    "remove_car": "Remove",
+    "budget_used": "Budget Used",
+    "budget_remaining": "${{amount}} left of $50,000",
+    "budget_full": "Budget maxed out!",
+    "tip_remaining": "You have ${{amount}} left — add another car!",
+    "share_button": "Share My Garage",
+    "keep_browsing": "← Keep Browsing",
+    "confetti_message": "Garage complete!",
+    "undo_removed": "{{car}} removed — Undo?",
+    "undo": "Undo"
+  },
+
+  "budget": {
+    "total": "$50,000",
+    "used": "${{amount}} used",
+    "remaining": "${{amount}} remaining",
+    "over": "Over budget"
+  },
+
+  "share": {
+    "title": "Your Garage",
+    "card_cta": "Can you beat this?",
+    "share_to": "Share to:",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "copy_link": "Copy Link",
+    "download_image": "Download Image",
+    "copied": "Copied!",
+    "challenge_section": "Challenge Someone",
+    "challenge_description": "Send the challenge to a friend and see if they can build a better garage:",
+    "challenge_whatsapp": "Challenge on WhatsApp",
+    "votes_zero": "No votes yet. Share your garage to start getting votes!",
+    "votes_count": "Your garage has {{count}} vote",
+    "votes_count_plural": "Your garage has {{count}} votes",
+    "view_leaderboard": "View Leaderboard",
+    "whatsapp_message": "I built my Dream Garage at Expomovil 2025!\nTotal: ${{total}} of $50,000\nCan you do better? 👇\n{{url}}",
+    "whatsapp_challenge_message": "Hey! I built my Dream Garage at Expomovil 2025 — I dare you to beat it.\n\nMy cars:\n{{cars}}\n💰 Total: ${{total}} of $50,000\n\nHere's my garage:\n{{url}}\n\nCan you top it? You get 3 cars and $50,000. 🔥"
+  },
+
+  "challenge": {
+    "challenged_you": "{{name}} challenged you!",
+    "challenged_you_generic": "You've been challenged!",
+    "can_you_beat": "Can you build a better garage?",
+    "their_garage": "{{name}}'s Garage",
+    "their_garage_generic": "The Challenger's Garage",
+    "build_yours": "Build Your Garage →",
+    "vote_theirs": "Vote for this garage",
+    "showdown_title": "Garage Showdown!",
+    "their_side": "Their Garage",
+    "your_side": "Your Garage",
+    "votes": "{{count}} vote",
+    "votes_plural": "{{count}} votes",
+    "share_yours": "Share your garage to get votes:",
+    "challenge_another": "Challenge Someone Else"
+  },
+
+  "leaderboard": {
+    "title": "Leaderboard",
+    "updated_ago": "Updated {{minutes}} min ago",
+    "tab_top": "Top",
+    "tab_budget": "Best Budget",
+    "tab_shared": "Most Shared",
+    "tab_practical": "Most Practical",
+    "tab_rising": "Rising Today",
+    "votes": "{{count}} vote",
+    "votes_plural": "{{count}} votes",
+    "shares": "{{count}} share",
+    "shares_plural": "{{count}} shares",
+    "your_rank": "Your garage is ranked #{{rank}}",
+    "share_to_climb": "Share to climb the ranks!",
+    "staff_pick": "Staff Pick",
+    "view": "View",
+    "vote": "Vote",
+    "challenge": "Challenge",
+    "empty": "No garages yet. Be the first!"
+  },
+
+  "vote": {
+    "vote": "Vote",
+    "voted": "Voted!",
+    "already_voted": "You already voted for this garage"
+  },
+
+  "errors": {
+    "garage_not_found": "This garage doesn't exist or was removed.",
+    "offline": "No connection. Check your internet and try again.",
+    "save_failed": "Couldn't save your garage. Please try again.",
+    "generic": "Something went wrong. Please try again."
+  },
+
+  "common": {
+    "back": "← Back",
+    "loading": "Loading...",
+    "close": "Close",
+    "of": "of",
+    "budget_label": "$50K Challenge"
+  }
+}

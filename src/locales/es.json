@@ -1,0 +1,197 @@
+{
+  "lang": "es",
+
+  "nav": {
+    "leaderboard": "Clasificación",
+    "lang_toggle": "EN"
+  },
+
+  "landing": {
+    "headline": "Dream Garage",
+    "subheadline": "El reto de los $50,000",
+    "pitch_1": "Elegí 3 carros del Expomovil.",
+    "pitch_2": "No te pasés de $50,000.",
+    "pitch_3": "Compartí tu lineup.",
+    "pitch_4": "Retá a tus amigos a superarlo.",
+    "cta_build": "Armar mi garaje →",
+    "social_proof": "{{count}} garajes armados hoy",
+    "social_proof_one": "1 garaje armado hoy",
+    "leaderboard_link": "Ver clasificación",
+    "featured_title": "Garajes destacados",
+    "view_and_vote": "Ver y votar"
+  },
+
+  "catalog": {
+    "title": "Elegí tus carros",
+    "search_placeholder": "Buscar marca o modelo...",
+    "sort_label": "Ordenar",
+    "sort_popular": "Más populares",
+    "sort_price_asc": "Precio: menor a mayor",
+    "sort_price_desc": "Precio: mayor a menor",
+    "filter_label": "Filtrar",
+    "filter_title": "Filtros",
+    "filter_price_range": "Rango de precio",
+    "filter_fuel": "Combustible",
+    "filter_drivetrain": "Tracción",
+    "filter_seats": "Asientos",
+    "filter_brand": "Marca",
+    "filter_clear": "Limpiar todo",
+    "filter_apply": "Aplicar",
+    "what_is_popular": "¿Qué está eligiendo la gente?",
+    "no_results": "No hay carros que coincidan con los filtros.",
+    "add_to_garage": "+ Agregar",
+    "in_garage": "En mi garaje",
+    "over_budget": "Presupuesto insuficiente",
+    "expo_deal": "Precio Expo",
+    "featured_badge": "Destacado"
+  },
+
+  "categories": {
+    "all": "Todos",
+    "suv": "SUV",
+    "pickup": "Pickup",
+    "sedan": "Sedán",
+    "hatchback": "Hatchback",
+    "crossover": "Crossover",
+    "minivan": "Minivan",
+    "electric": "Eléctrico",
+    "hybrid": "Híbrido",
+    "commercial": "Comercial",
+    "sport": "Sport",
+    "luxury": "Lujo"
+  },
+
+  "car_detail": {
+    "specs_engine": "Motor",
+    "specs_hp": "Potencia",
+    "specs_drivetrain": "Tracción",
+    "specs_seats": "Asientos",
+    "specs_fuel_consumption": "Consumo",
+    "specs_ground_clearance": "Alt. libre",
+    "specs_range": "Autonomía",
+    "specs_zero_100": "0–100 km/h",
+    "specs_towing": "Capacidad de remolque",
+    "specs_safety": "Seguridad",
+    "specs_warranty": "Garantía",
+    "specs_hp_unit": "cv",
+    "specs_fuel_unit": "L/100km",
+    "specs_range_unit": "km",
+    "specs_towing_unit": "kg",
+    "specs_zero_unit": "s",
+    "specs_warranty_unit": "años",
+    "specs_clearance_unit": "mm",
+    "why_ticos_love_it": "¿Por qué les gusta a los ticos?",
+    "dealer_booth": "Puesto {{booth}}",
+    "contact_dealer": "Contactar al distribuidor",
+    "monthly_estimate": "~${{amount}}/mes (60 meses, 9% anual)",
+    "budget_after": "Presupuesto restante: ${{amount}}",
+    "remove_from_garage": "Quitar del garaje",
+    "add_to_garage": "Agregar a mi garaje"
+  },
+
+  "garage": {
+    "title": "Mi Dream Garage",
+    "default_label": "Mi Dream Garage",
+    "label_placeholder": "Nombre de tu garaje (ej: Garaje Tico Ideal)",
+    "tagline_placeholder": "Lema opcional (ej: Eficiencia ante todo)",
+    "bay_empty": "+ Agregar",
+    "bay_label": "Puesto {{n}}",
+    "remove_car": "Quitar",
+    "budget_used": "Presupuesto usado",
+    "budget_remaining": "${{amount}} restante de $50,000",
+    "budget_full": "¡Presupuesto completo!",
+    "tip_remaining": "Te quedan ${{amount}} — ¡agregá otro carro!",
+    "share_button": "Compartir mi garaje",
+    "keep_browsing": "← Seguir viendo carros",
+    "confetti_message": "¡Garaje completo!",
+    "undo_removed": "{{car}} quitado — ¿Deshacer?",
+    "undo": "Deshacer"
+  },
+
+  "budget": {
+    "total": "$50,000",
+    "used": "${{amount}} usados",
+    "remaining": "${{amount}} restantes",
+    "over": "Pasaste el presupuesto"
+  },
+
+  "share": {
+    "title": "Tu garaje",
+    "card_cta": "¿Podés hacer uno mejor?",
+    "share_to": "Compartir en:",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "copy_link": "Copiar enlace",
+    "download_image": "Descargar imagen",
+    "copied": "¡Copiado!",
+    "challenge_section": "Retá a alguien",
+    "challenge_description": "Enviá el reto a un amigo para ver si puede armar un mejor garaje:",
+    "challenge_whatsapp": "Retar en WhatsApp",
+    "votes_zero": "Tu garaje todavía no tiene votos. ¡Compartilo para empezar!",
+    "votes_count": "Tu garaje tiene {{count}} voto",
+    "votes_count_plural": "Tu garaje tiene {{count}} votos",
+    "view_leaderboard": "Ver clasificación",
+    "whatsapp_message": "¡Armé mi Dream Garage en el Expomovil 2025!\nTotal: ${{total}} de $50,000\n¿Podés hacer uno mejor? 👇\n{{url}}",
+    "whatsapp_challenge_message": "¡Ojo! Armé mi Dream Garage en el Expomovil 2025 y te reto a hacerlo mejor.\n\nMis carros:\n{{cars}}\n💰 Total: ${{total}} de $50,000\n\nAquí está mi garaje:\n{{url}}\n\n¿Podés superarlo? Tenés 3 carros y $50,000. 🔥"
+  },
+
+  "challenge": {
+    "challenged_you": "¡{{name}} te retó!",
+    "challenged_you_generic": "¡Te retaron!",
+    "can_you_beat": "¿Podés armar un mejor garaje?",
+    "their_garage": "El garaje de {{name}}",
+    "their_garage_generic": "El garaje del retador",
+    "build_yours": "Armar mi garaje →",
+    "vote_theirs": "Votar por este garaje",
+    "showdown_title": "¡Mano a mano!",
+    "their_side": "Su garaje",
+    "your_side": "Tu garaje",
+    "votes": "{{count}} voto",
+    "votes_plural": "{{count}} votos",
+    "share_yours": "Compartí tu garaje para conseguir votos:",
+    "challenge_another": "Retar a otra persona"
+  },
+
+  "leaderboard": {
+    "title": "Clasificación",
+    "updated_ago": "Actualizado hace {{minutes}} min",
+    "tab_top": "Top",
+    "tab_budget": "Mejor presupuesto",
+    "tab_shared": "Más compartidos",
+    "tab_practical": "Más prácticos",
+    "tab_rising": "En alza hoy",
+    "votes": "{{count}} voto",
+    "votes_plural": "{{count}} votos",
+    "shares": "{{count}} compartido",
+    "shares_plural": "{{count}} compartidos",
+    "your_rank": "Tu garaje está en el puesto #{{rank}}",
+    "share_to_climb": "¡Compartí para subir en la clasificación!",
+    "staff_pick": "Selección del staff",
+    "view": "Ver",
+    "vote": "Votar",
+    "challenge": "Retar",
+    "empty": "Aún no hay garajes. ¡Sé el primero!"
+  },
+
+  "vote": {
+    "vote": "Votar",
+    "voted": "¡Votaste!",
+    "already_voted": "Ya votaste por este garaje"
+  },
+
+  "errors": {
+    "garage_not_found": "Este garaje no existe o fue eliminado.",
+    "offline": "Sin conexión. Revisá tu internet e intentá de nuevo.",
+    "save_failed": "No se pudo guardar el garaje. Intentá de nuevo.",
+    "generic": "Algo salió mal. Intentá de nuevo."
+  },
+
+  "common": {
+    "back": "← Atrás",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "of": "de",
+    "budget_label": "$50K Challenge"
+  }
+}
